@@ -1,0 +1,104 @@
+/* css Reset */ 
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Custom properties (para evitar reutilização de valores ao longo do script) */
+    --headline-font-size: 35px;
+    --paragraph-font-size: 18px;
+    --headline-font-family: 'optima', 'Arial';
+    /* Efeito nos links */
+    --base-color: #685752;
+    --highlight-color: #997C70;
+    --light-gray: #f5f3f4;
+    --fast-transition: 0.135s;
+}
+
+body {
+    font-family: 'optima', 'Arial';
+    line-height: 1.6;
+    color: #10001f;
+    background-color: #f9f9f9;
+    text-align: justify;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.conteudo h1 {
+    color: #8EB486;
+    font-family: var(--headline-font-family);
+    font-size: var(--headline-font-size);
+    font-weight: bold;
+    margin: 100px 0 42px;
+    line-height: 1.4;
+}
+
+.conteudo p {
+    font-size: var(--paragraph-font-size);
+    line-height: 1.4;
+} 
+
+.conteudo a {
+    color: var(--highlight-color);
+    border-bottom: 2px dashed var(--highlight-color);
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+/* Quando o mouse passa sobre o link o texto fica branco e o fundo marrom*/
+.conteudo a:hover {
+    color: #fff;
+    background: var(--highlight-color);
+    border-bottom-color: transparent;
+    transition: all var(--fast-transition) ease-in;
+}
+
+.conteudo img, .conteudo figure {
+    padding: 0;
+    max-width: 100%;
+}
+
+.conteudo figure {
+    margin: 20px 0;
+}
+
+.conteudo figcaption {
+    text-align: center;
+    font-size: 14px;
+    padding: 7px 0;
+}
+
+.contato {
+    margin: 50px 0 100px;
+    text-align: center;
+}
+
+.contato h3 {
+    color: #8EB486;
+    font-family: var(--headline-font-family);
+    font-size: 35px;
+    font-weight: normal;
+    font-weight: 400;
+    margin: 0 0 16px
+}
+
+.contato a {
+    display: inline-block;
+    padding: 7px;
+}
+
+.main {
+    height: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
